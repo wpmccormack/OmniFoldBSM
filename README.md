@@ -28,3 +28,12 @@ In general, this study proceeds in three steps:
 
 ### npzMakers_shFiles
 * This folder contains sh files used to run the npz making files.  The naming conventions match what is described above.  Please see the contents of each file to see what specific mass values and signal contaminations are used.
+
+### runNN
+* This folder contains macros used to run OmniFolding on the npz files described above.  The naming convention matches that from above as well, and these macros also take the same arguments as the npz making macros.
+
+### runNN_shFiles
+* This folder contains macros to submit jobs for OmniFolding.
+
+### testNN
+* This folder contains macros used to set up and train NNs and PFNs specifically to descriminated BSM from SM physics events.  The macros will also read in npz files from above and give the per-event score for events based on the specific NN or PFN.  Be careful that the mass values and signal contamination percentages for the input files and the output file name should match.  These macros don't take the same command-line inputs as other files.
