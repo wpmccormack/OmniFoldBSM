@@ -37,3 +37,6 @@ In general, this study proceeds in three steps:
 
 ### testNN
 * This folder contains macros used to set up and train NNs and PFNs specifically to descriminated BSM from SM physics events.  The macros will also read in npz files from above and give the per-event score for events based on the specific NN or PFN.  Be careful that the mass values and signal contamination percentages for the input files and the output file name should match.  These macros don't take the same command-line inputs as other files.
+
+### plottingNotebooks
+* This folder contains the Jupyter notebooks that were used to create the plots in the paper.  Please note that to make some plots, the files read in or the labels must be changed from the state currently in this repository.
